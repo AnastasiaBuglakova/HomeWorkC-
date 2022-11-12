@@ -67,7 +67,7 @@ Console.WriteLine(res);
 double[] FillArray(int size, int minArray, int maxArray){
     double[] array = new double[size];
     for(int i = 0; i < size; i++)
-        array[i] = new Random().Next(minArray, maxArray) + new Random().NextDouble();
+        array[i] = Math.Round((new Random().Next(minArray, maxArray) + new Random().NextDouble()),2);
     return array;
 }
 void PrintArray(double[] arr){
